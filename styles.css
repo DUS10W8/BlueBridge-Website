@@ -4,13 +4,14 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: #005f73;
-    padding: 15px 20px;
+    padding: 15px 10px; /* Reduced padding for better spacing */
     color: white;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
 }
 
 body {
@@ -29,11 +30,13 @@ body {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 15px; /* Reduced gap for better spacing */
+    flex-wrap: wrap; /* Ensures items wrap if needed */
 }
 
 .nav-links li {
     display: inline;
+    white-space: nowrap; /* Prevents text breaking */
 }
 
 .nav-links a {
@@ -59,4 +62,3 @@ body {
         padding: 10px;
     }
 }
-
