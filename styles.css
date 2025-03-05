@@ -30,22 +30,23 @@ body {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 10px; /* Further reduced gap for better fit */
-    flex-wrap: wrap; /* Ensures items wrap if needed */
+    gap: 8px; /* Further reduced gap */
+    flex-wrap: wrap; /* Ensures wrapping */
     justify-content: flex-end; /* Aligns items properly */
+    max-width: 90%; /* Prevents items from stretching too far */
 }
 
 .nav-links li {
-    display: inline;
-    white-space: nowrap; /* Prevents text breaking */
+    display: inline-block;
+    white-space: nowrap; /* Prevents text from breaking */
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
-    font-size: 1em; /* Slightly reduced font size */
+    font-size: 0.9em; /* Slightly smaller font */
     font-weight: bold;
-    padding: 5px 8px; /* Adds padding to each link */
+    padding: 4px 6px; /* Slightly reduced padding */
 }
 
 .nav-links a:hover {
