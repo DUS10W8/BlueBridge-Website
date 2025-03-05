@@ -30,8 +30,9 @@ body {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 15px; /* Reduced gap for better spacing */
+    gap: 10px; /* Further reduced gap for better fit */
     flex-wrap: wrap; /* Ensures items wrap if needed */
+    justify-content: flex-end; /* Aligns items properly */
 }
 
 .nav-links li {
@@ -42,8 +43,9 @@ body {
 .nav-links a {
     color: white;
     text-decoration: none;
-    font-size: 1.1em;
+    font-size: 1em; /* Slightly reduced font size */
     font-weight: bold;
+    padding: 5px 8px; /* Adds padding to each link */
 }
 
 .nav-links a:hover {
@@ -60,5 +62,6 @@ body {
     .nav-links {
         flex-direction: column;
         padding: 10px;
+        align-items: center;
     }
 }
